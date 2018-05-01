@@ -92,3 +92,74 @@ iframe{
     position: relative;
     display: block;
 }
+
+#its{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #dbcab6;
+    color: rgb(150, 76, 16);
+    display: block;
+    float: left;
+}
+
+#its .head{
+    width: 40%;
+    padding-left: 6%;
+    padding-top: 6%;
+    padding-bottom: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+#its .head h2{
+    font-size: 42px;
+    display: block;
+    float: left;
+}
+
+#its .head p{
+    font-size: 20px;
+    font-family: ek;
+    display: block;
+    float: left;
+}
+
+#its img{
+    height: 30%;
+    width: 40%;
+    margin-bottom: 5%;
+}
+
+#history{
+    width: 100%;
+    background: rgb(240, 238, 231);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: ek;
+    display: block;
+    float: left;
+}
+
+#history .head img{
+    height: 50%;
+    width: 50%;
+    padding-top: 30px;
+    display: block;
+    float: left;
+}
+
+#history .head .content{
+    display: block;
+    float: left;
+    padding-left: 5%;
+    width: 40%;
+}
+
+#history .head .content h2{
+    font-size: 52px;
+}
+
+#history .head .content p{
+    font-size: 25px;
+    font-family: ek;
+}
