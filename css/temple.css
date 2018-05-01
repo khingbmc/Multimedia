@@ -27,12 +27,13 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
+    height: 70px;
     z-index: 4;
 }
 
 .logo{
     position: relative;
-    transform: translateY(9px);
+    transform: translateY(-8px);
     height: 50px;
     left: 0;
 }
@@ -63,16 +64,16 @@ nav{
 }
 
 .img_b3{
-    height: 800px;
+    height: 600px;
 }
 .img_b3 *{
     position: relative;
-    height: 300px;
-    width:400px;
+    height: 400px;
+    width:500px;
 }
 
 .img1{
-    transform: translate(120px, 120px);
+    transform: translate(210px, 120px);
     cursor: pointer;
     overflow: hidden;
 }
@@ -82,7 +83,7 @@ nav{
 }
 
 .img2{
-    transform: translate(520px, -180px);
+    transform: translate(700px, -280px);
     cursor: pointer;
     overflow: hidden;
 }
@@ -91,7 +92,7 @@ nav{
 }
 
 .img3{
-    transform: translate(920px, -480px);
+    transform: translate(1200px, -680px);
     cursor: pointer;
     overflow: hidden;
 }
@@ -101,35 +102,34 @@ nav{
 
 div.content {
 	background: rgb(56, 54, 54);
-	height: 500px;
+	height: 1000px;
     margin: 0;
     padding: 0;
     font-size: 28px;
-    transform: translateY(300px);
+    transform: translateY(800px);
+    width: 100%;
 }
 
-#div1{
-    z-index: 10;
-}
+
 
 .text1{
     font-family: hero;
     color: white;
     text-align: center;
     position: relative;
-    transform: translate(370px, 300px);
+    transform: translate(500px, 300px);
     background: rgba(0, 0, 0, 0.7);
-    width: 700px;
+    width: 850px;
 }
 
 .text1 h1{
-    font-size: 80px;
+    font-size: 100px;
     
 }
 
 .text{
-    height: 305px;
-    width:400px;
+    height: 405px;
+    width:500px;
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
     transform: translateY(0px);
@@ -138,7 +138,7 @@ div.content {
     align-items: center;
     overflow: hidden; 
     transition: 0.7s ease;
-    z-index: 4;
+    z-index: 2;
 
 }
 
@@ -149,7 +149,7 @@ div.content {
     font-size: 40px;
     padding: 10px 30px;
     text-align: center;
-    transform: translateY(80px);
+    transform: translateY(120px);
 }
 
 
@@ -168,4 +168,73 @@ div.content {
 
 #div5{
     background: white;
+}
+
+.container{
+    width: 35%;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    position: relative;
+    transform: translate(-450px, 100px);
+}
+
+.text_box{
+
+}
+@keyframes slider{
+    0%{
+        left: 0px;
+    }
+    20%{
+        left: 0px;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    85%{
+        left: -300%;
+    }
+    90%{
+        left: -400%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+
+
+.slider{
+    overflow: hidden;
+    position: relative;
+    transform: translate(0px, 250px);
+}
+
+.slider figure img{
+    width: 20%;
+    float: left;
+    height: 350px;
+
+}
+
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slider infinite; 
 }
