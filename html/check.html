@@ -11,39 +11,6 @@
 		}
 	</style>
 	<link rel="stylesheet" href="../css/temple.css">
-	<script type="text/javascript">
-		var scrollY = 0;
-		var distance = 40;
-		var speed = 24;
-		function autoScrollTo(el) {
-			var currentY = window.pageYOffset;
-			var targetY = document.getElementById(el).offsetTop;
-			var bodyHeight = document.body.offsetHeight;
-			var yPos = currentY + window.innerHeight;
-			var animator = setTimeout('autoScrollTo(\''+el+'\')',24);
-			if(yPos > bodyHeight){
-				clearTimeout(animator);
-			} else {
-				if(currentY < targetY-distance){
-					scrollY = currentY+distance;
-					window.scroll(0, scrollY);
-				} else {
-					clearTimeout(animator);
-				}
-			}
-		}
-		function resetScroller(el){
-			var currentY = window.pageYOffset;
-			var targetY = document.getElementById(el).offsetTop;
-			var animator = setTimeout('resetScroller(\''+el+'\')',speed);
-			if(currentY > targetY){
-				scrollY = currentY-distance;
-				window.scroll(0, scrollY);
-			} else {
-				clearTimeout(animator);
-			}
-		}
-	</script>
 </head>
 <body>
 	<header>
@@ -55,52 +22,60 @@
 			</ul>
 		</nav>
 	</header>
-	<div id="#box1">
-		<video autoplay muted loop id="myVideo">
-			<source src="c.mp4" type="video/mp4">
-			</video>
-			<div class="text1">
-				<h1>THE THREE GORGEOUS<br>HOLY PLACE</h1>
-			</div>
-			
-		</div>
-		
-	</div>   
-	<div class="box2">
-		<div class="text_box2">
-			<h2>blah blah</h2>
-		</div>
-		<div class="img_b3">
-			<div class="img1">
-				<a href="khamkaen.html">
-					<img src="pic/kham.jpg" alt="">
-					<div class="text">
-						<h2>WAT PHRA THAT <br> KHAM KHAEN</h2>
-					</div>
+	<header>
+		<nav>
+			<ul class="navbar">
+				<a href="home.html" class="active">
+					<img src="pic/mhee.png" class="logo">
 				</a>
-			</div>
-			<div class="img2">
-				<a href="#" onclick="return false;" onmousedown="autoScrollTo('div6');">
-					<img src="pic/kham.jpg" alt="">
-					<div class="text">
-						<h2>WAT SRA THONG <br> BAN BUA</h2>
-					</div>
-				</a>
-			</div>
-			<div class="img3">
-				<a href="#" onclick="return false;" onmousedown="autoScrollTo('div7');">
-					<img src="pic/kham.jpg" alt="">
-					<div class="text">
-						<h2>KHON KAEN <br> CITY PILLAR</h2>
-					</div>
-				</a>
+			</ul>
+		</nav>
+	</header>
+	<div id="box1" class="block">			
+		<div class="head1">
+			<video autoplay muted loop id="vdo">
+				<source src="c.mp4" type="video/mp4">
+				</video>
+				<div class="text1">
+					<h1>THE THREE GORGEOUS<br>HOLY PLACE</h1>
+				</div>
 			</div>
 		</div>
 	</div>
 	
-	
-</div>
-	
-</div>
-</body>
-</html>
+	<div id="box2" class="block">
+		<h1>Your Style</h1>
+		<p>การท่องเที่ยวในรูปแบบที่คุณสามารถเลือกเองได้</p>
+		<div class="img_to_content">
+			<div class="img-all img1">
+				<a href="check.html">
+					<img src="pic/temple.jpg" alt="">
+					<div class="text">
+						<h2>WAT PHRA THAT <br>KHAM KAEN</h2>
+					</div>
+				</a>
+				
+			</div>
+			
+			<div class="img-all img2">
+				<a href="#">
+					<img src="pic/book.jpg" alt="">
+				</a>
+				<div class="text">
+					<h2>LOREM</h2>
+				</div>
+			</div>
+			
+			<div class="img-all img3">
+				<a href="#">
+					<img src="pic/somtum.jpg" alt="">
+				</a>
+				<div class="text">
+					<h2>LOREM</h2>
+				</div>
+			</div>
+			
+			<div style="clear:both"></div>
+		</div>
+	</body>
+	</html>

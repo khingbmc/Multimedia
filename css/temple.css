@@ -7,15 +7,14 @@
     src: url(../font/Super_Comic.otf)
 }
 
-*{
-    box-sizing: border-box;
-}
-
-
 body{
     
     margin: 0;
     padding: 0;
+    font-family: Luna;
+    width: 100%;
+    background: whitesmoke;
+
 }
 nav{
     list-style-type: none;
@@ -27,214 +26,138 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
     z-index: 4;
 }
 
 .logo{
     position: relative;
-    transform: translateY(-8px);
+    transform: translateY(0px);
     height: 50px;
     left: 0;
 }
 
-#myVideo {
+#box1{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#vdo{
+    width: 100%;
+    top: 0;
+    margin-top: 5%;
     position: fixed;
     right: 0;
     bottom: 0;
     z-index: -2;
-    width: 100%;
 }
-
-.box2{
-    height: 700px;
-    width: 100%;
-    position: relative;
-    background: white;
-    transform: translateY(800px);
-    z-index: 3;
-}
-
-#div1{
-    height: 730px;
-    width: 100%;
-    position: relative;
-    background: white;
-    transform: translateY(900px);
-}
-
-.img_b3{
-    height: 600px;
-}
-.img_b3 *{
-    position: relative;
-    height: 400px;
-    width:500px;
-}
-
-.img1{
-    transform: translate(210px, 120px);
-    cursor: pointer;
-    overflow: hidden;
-}
-
-.img1:hover .text{
-    transform: translateY(-100%);
-}
-
-.img2{
-    transform: translate(700px, -280px);
-    cursor: pointer;
-    overflow: hidden;
-}
-.img2:hover .text{
-    transform: translateY(-100%);
-}
-
-.img3{
-    transform: translate(1200px, -680px);
-    cursor: pointer;
-    overflow: hidden;
-}
-.img3:hover .text{
-    transform: translateY(-100%);
-}
-
-div.content {
-	background: rgb(56, 54, 54);
-	height: 1000px;
-    margin: 0;
-    padding: 0;
-    font-size: 28px;
-    transform: translateY(800px);
-    width: 100%;
-}
-
-
-
 .text1{
     font-family: hero;
     color: white;
     text-align: center;
     position: relative;
-    transform: translate(500px, 300px);
+    margin-left: auto;
+    margin-right: auto;
     background: rgba(0, 0, 0, 0.7);
-    width: 850px;
+    width: 700px;
+    font-size: 35px;
 }
 
-.text1 h1{
-    font-size: 100px;
-    
+.block {
+    display: block;
+    position: relative;
+}
+
+#box2{
+    width: 100%;
+    background: whitesmoke;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: ek;
+    text-align: center;
+}
+#box2 h1{
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+}
+#box2 p{
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head1{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.img_to_content{
+    width: 100%;
+    display: block;
+}
+
+.img-all {
+    float: left;
+    width: 33.33333333333333%;
+    height: 400px;
+    position: relative;
+    display: block;
+}
+
+.img-all .text {
+    transform: translateY(100%);
+}
+
+.img-all:hover .text {
+    transform: translateY(0);
+}
+
+.img1{
+    /* transform: translate(120px, 100px); */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img2{
+    /* transform: translate(520px, -200px); */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.img3{
+    /* transform: translate(920px, -500px); */
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .text{
-    height: 405px;
-    width:500px;
+    width:100%;
+    height: 100%;
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
-    transform: translateY(0px);
     display: flex;
     justify-content:center;
     align-items: center;
     overflow: hidden; 
     transition: 0.7s ease;
-    z-index: 2;
+    bottom: 0;
 
 }
 
 .text h2{
     position: relative;
-    font-family: ek;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     padding: 10px 30px;
     text-align: center;
-    transform: translateY(120px);
-}
-
-
-.text_box2{
-    width: 100%;
-    height: 70px;
-    position: relative;
-    transform: translateY(50px);
-    font-family: ek;
-    font-size: 40px;
-}
-
-.text_box2 h2{
-    text-align: center;
-}
-
-#div5{
-    background: white;
-}
-
-.container{
-    width: 35%;
-    height: 400px;
-    margin: 0 auto;
-    border: 1px solid black;
-    position: relative;
-    transform: translate(-450px, 100px);
-}
-
-.text_box{
-
-}
-@keyframes slider{
-    0%{
-        left: 0px;
-    }
-    20%{
-        left: 0px;
-    }
-    25%{
-        left: -100%;
-    }
-    45%{
-        left: -100%;
-    }
-    50%{
-        left: -200%;
-    }
-    70%{
-        left: -200%;
-    }
-    75%{
-        left: -300%;
-    }
-    85%{
-        left: -300%;
-    }
-    90%{
-        left: -400%;
-    }
-    100%{
-        left: -400%;
-    }
-}
-
-
-.slider{
-    overflow: hidden;
-    position: relative;
-    transform: translate(0px, 250px);
-}
-
-.slider figure img{
-    width: 20%;
-    float: left;
-    height: 350px;
-
-}
-
-.slider figure{
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    text-align: left;
-    font-size: 0;
-    animation: 20s slider infinite; 
 }
