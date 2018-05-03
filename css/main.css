@@ -1,4 +1,9 @@
 @font-face{
+    font-family: pay;
+    src: url(../font/pay.ttf);
+}
+
+@font-face{
     font-family: Luna;
     src: url(../font/Luna.ttf);
 }
