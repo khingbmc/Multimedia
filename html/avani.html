@@ -26,38 +26,70 @@
                 <p>โรงแรม อะวานี ขอนแก่น โฮเต็ล แอนด์ คอนเวนชั่น เซ็นเตอร์ โรงแรมหรูระดับ 4 ดาว ตั้งอยู่บนทำเลที่เหมาะเจาะเพื่อการพักผ่อนและการติดต่อธุรกิจที่ลงตัว
                     ใจกลางตัวเมืองขอนแก่น ให้บริการห้องพักและห้องสวีทที่เพียบพร้อมไปด้วยสิ่งอำนวยความสะดวก ทันสมัยจำนวน 196 ห้อง 
                     แต่ละห้องตกแต่งอย่างมีเอกลักษณ์สไตล์ “ไทยอีสานโมเดิร์น” ผสมผสานความเป็นไทยและการออกแบบสมัยใหม่ได้อย่างลงตัว</p>
-                
-            </div>
-            <div class="utub check"> 
-                <iframe width="55%" height="500" src="https://www.youtube.com/embed/u-Vbx6y1Yp4"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    
+                </div>
+                <div class="utub check"> 
+                    <iframe width="55%" height="500" src="https://www.youtube.com/embed/u-Vbx6y1Yp4"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="its" class="block">
-        <div class="head">
-            <h2>LOCATION</h2>
-            <p>&nbsp;&nbsp;ที่ตั้ง 999 หมู่ 4, ถนน ประชาสโมสร, ตำบล ในเมือง, อำเภอ เมือง  ขอนแก่น 40000
-                <br>&nbsp;&nbsp;การเดินทาง  ใกล้ศูนย์การค้าเซ็นทรัลพลาซ่าขอนแก่น แหล่งช้อปปิ้ง และสนามบินขอนแก่น  นืองต้นตำรับ                    
-            </p>
-        </div>
-        <img src="pic/mhee.png" alt="">
-    </div>
-    <div id="history" class="block">
-        <div class="head">
-            <div class="img">
-                <img src="pic/1.jpg" alt="">
-            </div>
-            <div class="content">
-                <h2 style="margin-bottom: 20px; margin-top: 60px;">Details</h2>
-                <p>โทรศัพท์   043 209 888<br>
-                    &nbsp;&nbsp;&nbsp;สิ่งอำนวยความสะดวก  : สระว่ายน้ำกลางแจ้ง , ฟิตเนสเซ็นเตอร์ , รถรับส่ง , บริการ ซักอบรีด , ห้องอบไอน้ำ ฯลฯ
+        <div id="its" class="block">
+            <div class="head">
+                <h2>LOCATION</h2>
+                <p>&nbsp;&nbsp;ที่ตั้ง 999 หมู่ 4, ถนน ประชาสโมสร, ตำบล ในเมือง, อำเภอ เมือง  ขอนแก่น 40000
+                    <br>&nbsp;&nbsp;การเดินทาง  ใกล้ศูนย์การค้าเซ็นทรัลพลาซ่าขอนแก่น แหล่งช้อปปิ้ง และสนามบินขอนแก่น  นืองต้นตำรับ                    
                 </p>
             </div>
+            <img src="pic/mhee.png" alt="">
         </div>
-    </div>
-    <div class="border-right"></div>
-    <div class="border-left"></div>
+        <div id="history" class="block">
+            <div class="head">
+                <div class="img">
+                    <img src="pic/avani.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2 style="margin-bottom: 20px; margin-top: 60px;">Details</h2>
+                    <p>โทรศัพท์   043 209 888<br>
+                        &nbsp;&nbsp;&nbsp;สิ่งอำนวยความสะดวก  : สระว่ายน้ำกลางแจ้ง , ฟิตเนสเซ็นเตอร์ , รถรับส่ง , บริการ ซักอบรีด , ห้องอบไอน้ำ ฯลฯ
+                    </p>
+                </div>
+                <div class="carousel">
+                    
+                    <img src="pic/avani/avani2.jpg" id="item-1.jpg">
+                    <img src="pic/avani/avani3.jpg" id="item-2.jpg">
+                    <img src="pic/avani/avani4.jpg" id="item-3.jpg">
+                    <img src="pic/avani/avani5.jpg" id="item-4.jpg">
+                    <img src="pic/avani/avani6.jpg" id="item-5.jpg">
+                    <img src="pic/avani/avani7.jpg" id="item-6.jpg">
+                    <img src="pic/avani/avani8.jpg" id="item-7.jpg">
+                    <img src="pic/avani/avani9.jpg" id="item-8.jpg">
+                    <img src="pic/avani/avani10.jpg" id="item-9.jpg">
+                </div>
+            </div>
+        </div>
+        <div>
+        </div>
+        <div class="border-right"></div>
+        <div class="border-left"></div>
+        
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var carousel = $(".carousel").waterwheelCarousel({
+                    flankingItems: 3
+                });
+                $('#prev').bind('click', function(){
+                    carousel.prev();
+                    return false;
+                });
+                $('#next').bind('click', function(){
+                    carousel.next();
+                    return false;
+                });
+            });
+        </script>
+    </body>
+    </html>
     
-</body>
-</html>

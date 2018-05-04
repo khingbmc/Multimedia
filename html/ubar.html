@@ -47,7 +47,7 @@
     <div id="history" class="block">
         <div class="head">
             <div class="img">
-                <img src="pic/1.jpg" alt="">
+                <img src="pic/ubar.jpg" alt="">
             </div>
             <div class="content">
                 <h2>Details</h2>
@@ -58,10 +58,32 @@
                        <br> โทรศัพท์ : 043-320-434
                 </p>
             </div>
+            <img src="pic/ub/ubar2.jpg" id="item-1.jpg">
+            <img src="pic/ub/ubar3.jpg" id="item-1.jpg">
+            <img src="pic/ub/ubar4.jpg" id="item-1.jpg">
+            <img src="pic/ub/ubar5.jpg" id="item-1.jpg">
+            <img src="pic/ub/ubar6.jpg" id="item-1.jpg">
         </div>
     </div>
     <div class="border-right"></div>
     <div class="border-left"></div>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+                <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        var carousel = $(".carousel").waterwheelCarousel({
+                            flankingItems: 3
+                        });
+                        $('#prev').bind('click', function(){
+                            carousel.prev();
+                            return false;
+                        });
+                        $('#next').bind('click', function(){
+                            carousel.next();
+                            return false;
+                        });
+                    });
+                </script>
     
 </body>
 </html>

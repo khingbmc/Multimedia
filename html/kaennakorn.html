@@ -47,7 +47,7 @@
     <div id="history" class="block">
         <div class="head">
             <div class="img">
-                <img src="pic/1.jpg" alt="">
+                <img src="pic/kn/kn1.jpg" alt="">
             </div>
             <div class="content">
                 <h2>History of Place</h2>
@@ -56,11 +56,36 @@
                     ระหว่างศิลปะสมัยทวารวดี และศิลปะอินโดจีน ซึ่งเป็นลักษณะแบบชาวอีสานปากแห มีความสูง 80 เมตร 
                     มีพระจุลธาตุ 4 องค์ ตั้งอยู่ 4 มุม และมีกำแพงแก้วพญานาค 7 เศียรล้อมรอบพระธาตุทั้ง 9 ชั้น</p>
             </div>
+            <div class="carousel">
+                    <img src="pic/kn/kn2.jpg" id="item-1.jpg">
+                    <img src="pic/kn/kn3.jpg" id="item-1.jpg">
+                    <img src="pic/kn/kn4.jpg" id="item-1.jpg">
+                    <img src="pic/kn/kn5.jpg" id="item-1.jpg">
+                    <img src="pic/kn/kn6.jpg" id="item-1.jpg">
+                    
+                </div>
 
         </div>
     </div>
     <div class="border-right"></div>
     <div class="border-left"></div>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+                <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        var carousel = $(".carousel").waterwheelCarousel({
+                            flankingItems: 3
+                        });
+                        $('#prev').bind('click', function(){
+                            carousel.prev();
+                            return false;
+                        });
+                        $('#next').bind('click', function(){
+                            carousel.next();
+                            return false;
+                        });
+                    });
+                </script>
     
 </body>
 </html>

@@ -23,41 +23,58 @@
             <div class="hp check">
                 <h2 style="font-size:60px;">Piman Garden Boutique Hotel</h2>
                 <p>โรงแรมพิมาน การ์เด้นเป็นสถานที่พักอันลงตัวสำหรับนักท่องเที่ยวที่ต้องการดื่มด่ำกับสีสันของขอนแก่น จากที่นี้ ผู้เข้าพักสามารถไปยังทุกที่ในเมืองอันมีชีวิตชีวานี้ได้อย่างง่ายดาย
-                     ด้วยทำเลที่สะดวกสบายของโรงแรม คุณสามารถเดินทางไปยังสถานที่ที่ต้องไปชมให้ได้ของเมืองได้อย่างง่ายดาย
+                    ด้วยทำเลที่สะดวกสบายของโรงแรม คุณสามารถเดินทางไปยังสถานที่ที่ต้องไปชมให้ได้ของเมืองได้อย่างง่ายดาย
                     โรงแรมพิมาน การ์เด้น ทุ่มเทมอบความสะดวกสบายแก่ผู้เข้าพัก ด้วยบริการและสิ่งอำนวยความสะดวกที่ดีพร้อมที่สุดสำหรับคุณ </p>
-                
-            </div>
-            <div class="utub check"> 
-                <iframe width="55%" height="500" src="https://www.youtube.com/embed/ox0SyMKnBYs"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    
+                </div>
+                <div class="utub check"> 
+                    <iframe width="55%" height="500" src="https://www.youtube.com/embed/ox0SyMKnBYs"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="its" class="block">
-        <div class="head">
-            <h2>LOCATION</h2>
-            <p>&nbsp;&nbsp;ที่ตั้ง :6/110 ถนนกลางเมือง, ขอนแก่น ช้อปปิ้ง เซ็นเตอร์
-                <br>&nbsp;&nbsp;การเดินทาง :ตั้งอยู่ห่างจากสนามบินขอนแก่นเพียง 15 นาทีโดยรถยนต์ ท่านใช้เวลาเดินทางโดยรถยนต์จากโรงแรมไปยังตลาดถนนคนเดินเพียง 5 นาที
-                 และไปยังใจกลางเมืองขอนแก่นเพียง 10 นาที                
-            </p>
-        </div>
-        <img src="pic/mhee.png" alt="">
-    </div>
-    <div id="history" class="block">
-        <div class="head">
-            <div class="img">
-                <img src="pic/1.jpg" alt="">
-            </div>
-            <div class="content">
-                <h2 style="margin-bottom: 20px; margin-top: 40px;">Details</h2>
-                <p>โทรศัพท์    : 043 334 111  <br>
-                    &nbsp;&nbsp;&nbsp;สิ่งอำนวยความสะดวก  : ที่จอดรถ, บริการรถรับ-ส่งถึงสนามบิน, บริการนำรถไปจอด, Wi-Fi ในพื้นที่สาธารณะ, ร้านอาหาร 
+        <div id="its" class="block">
+            <div class="head">
+                <h2>LOCATION</h2>
+                <p>&nbsp;&nbsp;ที่ตั้ง :6/110 ถนนกลางเมือง, ขอนแก่น ช้อปปิ้ง เซ็นเตอร์
+                    <br>&nbsp;&nbsp;การเดินทาง :ตั้งอยู่ห่างจากสนามบินขอนแก่นเพียง 15 นาทีโดยรถยนต์ ท่านใช้เวลาเดินทางโดยรถยนต์จากโรงแรมไปยังตลาดถนนคนเดินเพียง 5 นาที
+                    และไปยังใจกลางเมืองขอนแก่นเพียง 10 นาที                
                 </p>
             </div>
+            <img src="pic/mhee.png" alt="">
         </div>
-    </div>
-    <div class="border-right"></div>
-    <div class="border-left"></div>
+        <div id="history" class="block">
+            <div class="head">
+                <div class="img">
+                    <img src="pic/1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h2 style="margin-bottom: 20px; margin-top: 40px;">Details</h2>
+                    <p>โทรศัพท์    : 043 334 111  <br>
+                        &nbsp;&nbsp;&nbsp;สิ่งอำนวยความสะดวก  : ที่จอดรถ, บริการรถรับ-ส่งถึงสนามบิน, บริการนำรถไปจอด, Wi-Fi ในพื้นที่สาธารณะ, ร้านอาหาร 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="border-right"></div>
+        <div class="border-left"></div>
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var carousel = $(".carousel").waterwheelCarousel({
+                    flankingItems: 3
+                });
+                $('#prev').bind('click', function(){
+                    carousel.prev();
+                    return false;
+                });
+                $('#next').bind('click', function(){
+                    carousel.next();
+                    return false;
+                });
+            });
+        </script>
+    </body>
+    </html>
     
-</body>
-</html>

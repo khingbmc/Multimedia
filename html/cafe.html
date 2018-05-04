@@ -48,7 +48,7 @@
     <div id="history" class="block">
         <div class="head">
             <div class="img">
-                <img src="pic/1.jpg" alt="">
+                <img src="pic/cafe/cafe1.jpg" alt="">
             </div>
             <div class="content">
                 <h2>Details</h2>
@@ -57,11 +57,36 @@
                     <br><br> วันและเวลาเปิดปิดทำการ : เปิดทุกวัน อาทิตย์ - ศุกร์ เวลา 09.30 - 19.00 น. เสาร์ เวลา 09.30 - 22.00 น.
                 </p>
             </div>
-
+            <div class="carousel">
+                    
+                    <img src="pic/cafe/cafe2.jpg" id="item-1.jpg">
+                    <img src="pic/cafe/cafe3.jpg" id="item-1.jpg">
+                    <img src="pic/cafe/cafe4.jpg" id="item-1.jpg">
+                    <img src="pic/cafe/cafe5.jpg" id="item-1.jpg">
+                    <img src="pic/cafe/cafe6.jpg" id="item-1.jpg">
+                    
+                </div>
         </div>
     </div>
     <div class="border-right"></div>
     <div class="border-left"></div>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var carousel = $(".carousel").waterwheelCarousel({
+                    flankingItems: 3
+                });
+                $('#prev').bind('click', function(){
+                    carousel.prev();
+                    return false;
+                });
+                $('#next').bind('click', function(){
+                    carousel.next();
+                    return false;
+                });
+            });
+        </script>
     
 </body>
 </html>

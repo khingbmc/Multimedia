@@ -46,7 +46,7 @@
     <div id="history" class="block">
         <div class="head">
             <div class="img">
-                <img src="pic/1.jpg" alt="">
+                <img src="pic/ts/ts.jpg" alt="">
             </div>
             <div class="content">
                 <h2>History of Place</h2>
@@ -55,11 +55,35 @@
                     องค์พระเจดีย์ออกแบบเป็นเจดีย์โถงโล่ง ทรงระฆังคว่ำ แบบนานาชาติ ทั้งไทยธิเบต จีน ฝรั่ง ผสมผสานกันอย่างสวยงาม  
                     ยังมีจุดสักการะเจ้าแม่กวนอิม พระสังกัจจายน์ พระสีวลี  และยังมีลานนรกที่สร้างไว้เตือนสติด้วย</p>
             </div>
-
+            <div class="carousel">
+                    <img src="pic/ts/ts2.jpeg" alt="">
+                    <img src="pic/ts/ts3.jpeg" alt="">
+                    <img src="pic/ts/ts4.jpeg" alt="">
+                    <img src="pic/ts/ts5.jpeg" alt="">
+                    <img src="pic/ts/ts6.jpeg" alt="">
+                    
+                </div>
         </div>
     </div>
     <div class="border-right"></div>
     <div class="border-left"></div>
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+                <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        var carousel = $(".carousel").waterwheelCarousel({
+                            flankingItems: 3
+                        });
+                        $('#prev').bind('click', function(){
+                            carousel.prev();
+                            return false;
+                        });
+                        $('#next').bind('click', function(){
+                            carousel.next();
+                            return false;
+                        });
+                    });
+                </script>
     
 </body>
 </html>

@@ -48,7 +48,7 @@
     <div id="history" class="block">
         <div class="head">
             <div class="img">
-                <img src="pic/1.jpg" alt="">
+                <img src="pic/marsh/marsh1.jpg" alt="">
             </div>
             <div class="content">
                 <h2>Activities</h2>
@@ -58,10 +58,34 @@
                       บริเวณรอบบึงแก่นนครมีจักรยาน และเรือถีบให้เช่า ราคาประมาณ 30 บาท ต่อครึ่งชั่วโมง 
                 </p>
             </div>
+            <div class="carousel">
+                    <img src="pic/marsh/marsh2.jpg" id="item-1.jpg">
+                    <img src="pic/marsh/marsh3.jpg" id="item-1.jpg">
+                    <img src="pic/marsh/marsh4.jpg" id="item-1.jpg">
+                    <img src="pic/marsh/marsh5.jpg" id="item-1.jpg">
+                    
+                    
+                </div>
         </div>
     </div>
     <div class="border-right"></div>
     <div class="border-left"></div>
-    
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+                <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+                <script type="text/javascript">
+                    $(document).ready(function(){
+                        var carousel = $(".carousel").waterwheelCarousel({
+                            flankingItems: 3
+                        });
+                        $('#prev').bind('click', function(){
+                            carousel.prev();
+                            return false;
+                        });
+                        $('#next').bind('click', function(){
+                            carousel.next();
+                            return false;
+                        });
+                    });
+                </script>
 </body>
 </html>
